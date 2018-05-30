@@ -1,9 +1,6 @@
 package simaoh.springframework.recipe.domain;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 public class Notes {
 
@@ -13,6 +10,8 @@ public class Notes {
 
     @OneToOne
     private Recipe recipe;
+
+    @Lob
     private String recipeNotes;
 
     public Long getId() {
