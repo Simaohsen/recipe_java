@@ -2,6 +2,7 @@ package simaoh.springframework.recipe.domain;
 
 import javax.persistence.*;
 
+@Entity
 public class Notes {
 
     @Id
